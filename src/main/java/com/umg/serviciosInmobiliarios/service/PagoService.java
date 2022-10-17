@@ -230,6 +230,13 @@ public class PagoService {
         if(fechaPago.compareTo(fechaMora) > 0)
             tieneMulta = true;
 
+        int mesAPagar = fechaPago.getMonth() + 1;
+        int mesFechaMora = fechaMora.getMonth()+1;
+        int anioAPagar = fechaPago.getYear() + 1900;
+
+        if((mesAPagar < mesFechaMora) || (anioAPagar < anio.getAnioName()))
+            tieneMulta = true;
+
         MultaDto multaDto = new MultaDto();
 
         multaDto.setMulta(tieneMulta);
