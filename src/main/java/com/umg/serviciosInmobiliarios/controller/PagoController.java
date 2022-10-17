@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RequestMapping("pago")
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://umg-seguridad-servicios-fe.herokuapp.com/")
 @RestController
 public class PagoController {
 

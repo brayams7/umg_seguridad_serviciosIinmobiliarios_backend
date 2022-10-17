@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RequestMapping("anio")
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://umg-seguridad-servicios-fe.herokuapp.com/")
 @RestController
 public class AnioController {
 

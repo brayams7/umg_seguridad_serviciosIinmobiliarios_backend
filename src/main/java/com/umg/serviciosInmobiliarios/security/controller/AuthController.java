@@ -29,7 +29,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("auth")
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://umg-seguridad-servicios-fe.herokuapp.com/")
 public class AuthController {
 
     @Autowired
