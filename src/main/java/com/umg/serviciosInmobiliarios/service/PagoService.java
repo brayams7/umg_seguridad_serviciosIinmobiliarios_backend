@@ -189,6 +189,10 @@ public class PagoService {
 
     }
 
+    public List<Pago> listarPagos(){
+        return this.pagoRepository.findAll();
+    }
+
     public List<Pago> listarPagosPorBeneficiado(Beneficiado beneficiado){
         return this.pagoRepository.findByBeneficiado(beneficiado);
     }

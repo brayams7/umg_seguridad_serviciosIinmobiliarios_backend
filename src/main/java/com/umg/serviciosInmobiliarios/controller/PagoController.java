@@ -92,6 +92,11 @@ public class PagoController {
         return "hola mudno";
     }
 
+    @GetMapping(path = "/list")
+    public ResponseEntity<List<Pago>> listarPagos(){
+        return new ResponseEntity<>(this.pagoService.listarPagos(),HttpStatus.OK);
+    }
+
     @GetMapping(path = "/list/{idBeneficiado}")
     public ResponseEntity<?> listarPagosBeneficiado(@PathVariable Integer idBeneficiado){
         if(idBeneficiado == null){
