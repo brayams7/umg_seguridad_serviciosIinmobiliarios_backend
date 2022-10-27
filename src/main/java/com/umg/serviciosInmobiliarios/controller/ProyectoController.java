@@ -14,7 +14,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RequestMapping("proyecto")
-@CrossOrigin(origins = "https://umg-seguridad-servicios-fe.herokuapp.com/")
+@CrossOrigin(origins = {"https://umg-seguridad-servicios-fe.herokuapp.com/","http://localhost:3000/"})
 @RestController
 public class ProyectoController {
 

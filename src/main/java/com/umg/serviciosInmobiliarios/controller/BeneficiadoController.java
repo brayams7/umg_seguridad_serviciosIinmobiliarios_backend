@@ -20,7 +20,7 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping(path = "beneficiado")
-@CrossOrigin(origins = "https://umg-seguridad-servicios-fe.herokuapp.com/")
+@CrossOrigin(origins = {"https://umg-seguridad-servicios-fe.herokuapp.com/","http://localhost:3000/"})
 public class BeneficiadoController {
 
     @Autowired
